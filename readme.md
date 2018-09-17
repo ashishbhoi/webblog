@@ -25,6 +25,13 @@
         DB_DATABASE=abdevp_lsapp
         DB_USERNAME=abdevp_lsapp
         DB_PASSWORD=rVKDhaJpBeEI
+        
+        MAIL_DRIVER=smtp
+        MAIL_HOST=mail.abdevp.tk
+        MAIL_PORT=465
+        MAIL_USERNAME="noreply@abdevp.tk"
+        MAIL_PASSWORD="cWbr0AIJ#BHa"
+        MAIL_ENCRYPTION=ssl
 
 2. '.htaccess' File
 
@@ -37,3 +44,14 @@
         RewriteEngine On
         RewriteCond %{HTTPS} off
         RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI}/$1 [L,R=301]
+
+3. '/config/mail.php'
+
+        'driver' => env('MAIL_DRIVER', 'smtp'),
+        'host' => env('MAIL_HOST', 'mail.abdevp.tk'),
+        'port' => env('MAIL_PORT', 465),
+            'from' => [
+                'address' => env('MAIL_FROM_ADDRESS', 'noreply@abdevp.tk'),
+                'name' => env('MAIL_FROM_NAME', 'no-reply | Abdevp'),
+            ],
+        'encryption' => env('MAIL_ENCRYPTION', 'ssl'),
