@@ -1,0 +1,59 @@
+.navbar-brand-icon {
+    height: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.form-group {
+    margin: 1rem;
+}
+
+.row {
+    margin: 1rem;
+}
+
+.jumbotron {
+    margin-top: 5vh;
+    height: 80vh;
+}
+
+.jumbtron-content {
+    margin-top: 10vh;
+}
+
+h1, h2, h3, h4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+
+    &:hover {
+        width: 20px;
+    }
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #343a40;
+    border-radius: 50px;
+
+    &:hover {
+        background: black;
+        border-radius: 50px;
+    }
+}
+
+.jumbotron-mod {
+    padding: 0;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: 0;
+}
+
+.btn {
+    margin-bottom: 2rem;
+}
+
