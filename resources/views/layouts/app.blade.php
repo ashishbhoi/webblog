@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Website For My Laravel Project">
+    <meta name="description" content="This is a blogging website and also a Website For My Laravel Project">
     <meta name="keywords" content="HTML, CSS, PHP, JavaScript, LARAVEL, BOOTSTRAP">
     <meta name="author" content="Ashish Kumar Bhoi">
     <meta name="theme-color" content="#f8fafc">
+    <meta name="mobile-web-app-capable" content="yes">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -46,6 +46,7 @@
         CKEDITOR.replace('article-ckeditor');
     }
 </script>
+<script src="/service-worker.js"></script>
 <script>
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
@@ -53,13 +54,13 @@
                 // Registration was successful
                 //console.log('ServiceWorker registration successful with scope: ', registration.scope);
             }, function(err) {
-                // registration failed :(
-                console.log('ServiceWorker registration failed: ', err);
+                //registration failed :(
+                //console.log('ServiceWorker registration failed: ', err);
             });
         });
     }
     else {
-        //console.log('Service Worker Not Available in navigator')
+        console.log('Service Worker Not Available in navigator')
     }
 </script>
 
