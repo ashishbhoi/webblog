@@ -46,7 +46,7 @@
         CKEDITOR.replace('article-ckeditor');
     }
 </script>
-<script src="/public/service-worker.js"></script>
+<script src="/service-worker.js"></script>
 <script>
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
