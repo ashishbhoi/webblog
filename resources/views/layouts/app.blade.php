@@ -46,6 +46,7 @@
         CKEDITOR.replace('article-ckeditor');
     }
 </script>
+<script src="/service-worker.js"></script>
 <script>
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
@@ -53,13 +54,13 @@
                 // Registration was successful
                 //console.log('ServiceWorker registration successful with scope: ', registration.scope);
             }, function(err) {
-                // registration failed :(
-                console.log('ServiceWorker registration failed: ', err);
+                //registration failed :(
+                //console.log('ServiceWorker registration failed: ', err);
             });
         });
     }
     else {
-        //console.log('Service Worker Not Available in navigator')
+        console.log('Service Worker Not Available in navigator')
     }
 </script>
 
