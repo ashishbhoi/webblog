@@ -1,5 +1,7 @@
 {
-    "private": true,
+    "name": "lsapp",
+    "version": "1.1.0",
+    "description": "This website is all about my personal blogging project.",
     "scripts": {
         "dev": "npm run development",
         "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
@@ -20,5 +22,16 @@
         "popper.js": "^1.12",
         "sw-precache-webpack-plugin": "^0.11.5",
         "vue": "^2.5.7"
-    }
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ashishkumarbhoi/webblog.git"
+    },
+    "main": "public/index.js",
+    "author": "Ashish Kumar Bhoi",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ashishkumarbhoi/webblog/issues"
+    },
+    "homepage": "https://github.com/ashishkumarbhoi/webblog#readme"
 }
