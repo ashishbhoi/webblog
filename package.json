@@ -33,5 +33,8 @@
     "bugs": {
         "url": "https://github.com/ashishkumarbhoi/webblog/issues"
     },
-    "homepage": "https://github.com/ashishkumarbhoi/webblog#readme"
+    "homepage": "https://github.com/ashishkumarbhoi/webblog#readme",
+    "dependencies": {
+        "markdown-toc": "^1.2.0"
+    }
 }
