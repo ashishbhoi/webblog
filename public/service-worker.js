@@ -29,7 +29,8 @@
 
 
 /* eslint-disable quotes, comma-spacing */
-var PrecacheConfig = [['css/app.css'],
+var PrecacheConfig = [['/'],
+    ['css/app.css'],
     ['js/app.js'],
     ['manifest/icon120.png'],
     ['manifest/icon152.png'],
