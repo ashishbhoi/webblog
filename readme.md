@@ -15,7 +15,7 @@
 
 ## Setup Process ##
 1. Decompress 'public.zip' in your 'public_html' folder
-2. Decompress 'laravel.zip' in some directory which is not assemble by web.
+2. Decompress 'laravel.zip' in some directory which is not assessable by web.
 
 ## Modifications To Be made ##
 1. '/.env' File
