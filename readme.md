@@ -18,10 +18,20 @@
 2. Decompress 'laravel.zip' in some directory which is not assessable by web.
 
 ## Modifications To Be made ##
-1. '/.env' File
-2. '.htaccess' File
-3. '/config/mail.php'
-4. '/public/index.php' 
+1. rename '/.env.example' to '/.env'
+2. edit to your taste '.htaccess' File
+3. edit '/config/mail.php'
+4. edit '/public/index.php' 
 5. 'storage link'
 
-        ln -s ~/<Location Of Project>/storage/app/public ~/<Location Of Project>/public/storage
+        $ ln -s ~/<Location Of Project>/storage/app/public ~/<Location Of Project>/public/storage
+6. 'iniciate composer'
+
+        $ composer install
+        $ composer dumpautoload -o
+7. 'laravel command'
+
+        $ php artisan config:cache
+8. 'ckeditor'
+        
+        $ php artisan vendor:publish --tag=ckeditor
