@@ -1,6 +1,6 @@
 {
     "name": "ashish-webblog",
-    "version": "1.2.0",
+    "version": "2.0.0",
     "description": "This website is all about my personal blogging project.",
     "scripts": {
         "dev": "npm run development",
