@@ -29,9 +29,11 @@
 
         $ composer install
         $ composer dumpautoload -o
+        $ composer install --optimize-autoloader --no-dev
 7. 'laravel command'
 
         $ php artisan config:cache
+        $ php artisan route:cache
 8. 'ckeditor'
         
         $ php artisan vendor:publish --tag=ckeditor
