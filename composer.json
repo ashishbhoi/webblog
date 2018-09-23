@@ -1,7 +1,7 @@
 {
     "name": "ashishbhoi/webblog",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "description": "Web based Blog App With Laravel",
+    "keywords": ["webblog", "laravel", "Ashish"],
     "license": "MIT",
     "type": "project",
     "require": {
