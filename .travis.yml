@@ -1,0 +1,6 @@
+language: php
+sudo: enabled
+before_install:
+  - sudo apt-get update
+script:
+  - php --verison
