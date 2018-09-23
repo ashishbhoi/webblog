@@ -1,11 +1,12 @@
 <p align="center"><img src="https://www.abdevp.tk/favicon.png"></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/AshishBhoi/webblog.svg?branch=master"></a>
-<a href="https://packagist.org/packages/ashishbhoi/webblog"><img src="https://poser.pugx.org/ashishbhoi/webblog/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/ashishbhoi/webblog"><img src="https://poser.pugx.org/ashishbhoi/webblog/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/ashishbhoi/webblog"><img src="https://poser.pugx.org/ashishbhoi/webblog/license.svg" alt="License"></a>
-</p>
+[![Latest Stable Version](https://poser.pugx.org/ashishbhoi/webblog/version)](https://packagist.org/packages/ashishbhoi/webblog)
+[![Total Downloads](https://poser.pugx.org/ashishbhoi/webblog/downloads)](https://packagist.org/packages/ashishbhoi/webblog)
+[![Latest Unstable Version](https://poser.pugx.org/ashishbhoi/webblog/v/unstable)](//packagist.org/packages/ashishbhoi/webblog)
+[![License](https://poser.pugx.org/ashishbhoi/webblog/license)](https://packagist.org/packages/ashishbhoi/webblog)
+[![Monthly Downloads](https://poser.pugx.org/ashishbhoi/webblog/d/monthly)](https://packagist.org/packages/ashishbhoi/webblog)
+[![Daily Downloads](https://poser.pugx.org/ashishbhoi/webblog/d/daily)](https://packagist.org/packages/ashishbhoi/webblog)
+[![composer.lock available](https://poser.pugx.org/ashishbhoi/webblog/composerlock)](https://packagist.org/packages/ashishbhoi/webblog)
 
 ## About This Website ##
 
@@ -42,3 +43,5 @@
 8. 'ckeditor'
         
         $ php artisan vendor:publish --tag=ckeditor
+
+
