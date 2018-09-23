@@ -2,9 +2,6 @@ language: php
 php: 
   - 7.2.10
 sudo: enabled
-cache:
-  directories:
-    - $HOME/build
 before_install:
   - mkdir build
   - sudo apt-get update && sudo apt-get install zip
