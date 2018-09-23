@@ -1,5 +1,5 @@
 <p align="center"><img src="https://www.abdevp.tk/favicon.png"></p>
-
+[![Build Status](https://travis-ci.org/AshishBhoi/webblog.svg?branch=master)](https://travis-ci.org/AshishBhoi/webblog)
 ## [Ashish Kumar Bhoi](https://www.abdevp.tk/?launcher=true) ##
 
 ## About This Website ##
