@@ -1,12 +1,9 @@
 <p align="center"><img src="https://www.abdevp.tk/favicon.png"></p>
 
-[![Latest Stable Version](https://poser.pugx.org/ashishbhoi/webblog/version)](https://packagist.org/packages/ashishbhoi/webblog)
-[![Total Downloads](https://poser.pugx.org/ashishbhoi/webblog/downloads)](https://packagist.org/packages/ashishbhoi/webblog)
-[![Latest Unstable Version](https://poser.pugx.org/ashishbhoi/webblog/v/unstable)](//packagist.org/packages/ashishbhoi/webblog)
-[![License](https://poser.pugx.org/ashishbhoi/webblog/license)](https://packagist.org/packages/ashishbhoi/webblog)
-[![Monthly Downloads](https://poser.pugx.org/ashishbhoi/webblog/d/monthly)](https://packagist.org/packages/ashishbhoi/webblog)
-[![Daily Downloads](https://poser.pugx.org/ashishbhoi/webblog/d/daily)](https://packagist.org/packages/ashishbhoi/webblog)
-[![composer.lock available](https://poser.pugx.org/ashishbhoi/webblog/composerlock)](https://packagist.org/packages/ashishbhoi/webblog)
+[![Latest Stable Version](https://poser.pugx.org/ashishbhoi/webblog/version)](https://github.com/AshishBhoi/webblog/releases)
+[![Total Downloads](https://poser.pugx.org/ashishbhoi/webblog/downloads)](https://github.com/AshishBhoi/webblog/releases)
+[![Latest Unstable Version](https://poser.pugx.org/ashishbhoi/webblog/v/unstable)](https://github.com/AshishBhoi/webblog/releases)
+[![License](https://poser.pugx.org/ashishbhoi/webblog/license)](https://github.com/AshishBhoi/webblog/blob/master/LICENSE)
 
 ## About This Website ##
 
