@@ -1,5 +1,6 @@
 <p align="center"><img src="https://www.abdevp.tk/favicon.png"></p>
 
+[![Build Status](https://travis-ci.org/AshishBhoi/webblog.svg?branch=master)](https://travis-ci.org/AshishBhoi/webblog)
 [![Latest Stable Version](https://poser.pugx.org/ashishbhoi/webblog/version)](https://github.com/AshishBhoi/webblog/releases)
 [![Total Downloads](https://poser.pugx.org/ashishbhoi/webblog/downloads)](https://github.com/AshishBhoi/webblog/releases)
 [![Latest Unstable Version](https://poser.pugx.org/ashishbhoi/webblog/v/unstable)](https://github.com/AshishBhoi/webblog/releases)
