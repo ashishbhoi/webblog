@@ -24,15 +24,15 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/ashishkumarbhoi/webblog.git"
+        "url": "git+https://github.com/ashishbhoi/webblog.git"
     },
     "main": "public/index.js",
     "author": "Ashish Kumar Bhoi",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/ashishkumarbhoi/webblog/issues"
+        "url": "https://github.com/ashishbhoi/webblog/issues"
     },
-    "homepage": "https://github.com/ashishkumarbhoi/webblog#readme",
+    "homepage": "https://github.com/ashishbhoi/webblog#readme",
     "dependencies": {
         "markdown-toc": "^1.2.0"
     }
