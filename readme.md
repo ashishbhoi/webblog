@@ -1,6 +1,8 @@
 <p align="center"><img src="https://www.abdevp.tk/favicon.png"></p>
-[![Build Status](https://travis-ci.org/AshishBhoi/webblog.svg?branch=master)](https://travis-ci.org/AshishBhoi/webblog)
-## [Ashish Kumar Bhoi](https://www.abdevp.tk/?launcher=true) ##
+
+<p align="center">
+<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/AshishBhoi/webblog.svg?branch=master"></a>
+</p>
 
 ## About This Website ##
 
