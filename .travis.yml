@@ -1,4 +1,6 @@
 language: php
+php: 
+  - 7.2.10
 sudo: enabled
 cache: webblog.tar.gz
 before_install:
