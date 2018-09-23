@@ -1,6 +1,14 @@
 language: php
 sudo: enabled
+cache: webblog.tar.gz
 before_install:
   - sudo apt-get update
+  - composer install
+  - composer dumpautoload -o
+  - composer install --optimize-autoloader --no-dev
+  - php artisan config:cache
+  - php artisan route:cache
+  - php artisan vendor:publish --tag=ckeditor
 script:
-  - php --verison
+  - cp .env.example .env
+  - tar cvzf webblog.tar.gz *
