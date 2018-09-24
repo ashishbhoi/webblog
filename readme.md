@@ -1,8 +1,9 @@
 <p align="center"><img src="https://www.abdevp.tk/favicon.png"></p>
 
-[![Github All Releases](https://img.shields.io/github/downloads/ashishbhoi/webblog/total.svg?style=for-the-badge)](https://github.com/AshishBhoi/webblog/archive/master.zip)
-[![GitHub issues](https://img.shields.io/github/issues/AshishBhoi/webblog.svg?style=for-the-badge)](https://github.com/AshishBhoi/webblog/issues)
-[![GitHub license](https://img.shields.io/github/license/AshishBhoi/webblog.svg?style=for-the-badge)](https://github.com/AshishBhoi/webblog/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/AshishBhoi/webblog.svg?branch=master)](https://travis-ci.org/AshishBhoi/webblog)
+[![Github All Releases](https://img.shields.io/github/downloads/ashishbhoi/webblog/total.svg?style=plastic)](https://github.com/AshishBhoi/webblog/archive/master.zip)
+[![GitHub issues](https://img.shields.io/github/issues/AshishBhoi/webblog.svg?style=plastic)](https://github.com/AshishBhoi/webblog/issues)
+[![GitHub license](https://img.shields.io/github/license/AshishBhoi/webblog.svg?style=plastic)](https://github.com/AshishBhoi/webblog/blob/master/LICENSE)
 
 
 ## About This Website ##
