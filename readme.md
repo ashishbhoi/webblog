@@ -49,14 +49,14 @@
         
         $ php artisan vendor:publish --tag=ckeditor
 
-### Author ###
+## Author ##
 
 **Ashish Kumar Bhoi**
 
 * [github/AshishBhoi](https://github.com/jonschlinkert)
 * [twitter/Ashishbhoi8](https://twitter.com/jonschlinkert)
 
-### License ###
+## License ##
 
 Copyright © 2018, [Ashish Kumar Bhoi](https://github.com/AshishBhoi).
 Released under the [MIT License](LICENSE).
