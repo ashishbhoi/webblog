@@ -1,5 +1,4 @@
 [![AB Developers](https://www.abdevp.tk/favicon.png)](https://www.abdevp.tk)
-
 [![Build Status](https://travis-ci.org/AshishBhoi/webblog.svg?branch=master)](https://travis-ci.org/AshishBhoi/webblog)
 [![GitHub issues](https://img.shields.io/github/issues/AshishBhoi/webblog.svg)](https://github.com/AshishBhoi/webblog/issues)
 [![GitHub license](https://img.shields.io/github/license/AshishBhoi/webblog.svg)](https://github.com/AshishBhoi/webblog/blob/master/LICENSE)
@@ -49,3 +48,15 @@
 3. 'ckeditor'
         
         $ php artisan vendor:publish --tag=ckeditor
+
+### Author ###
+
+**Ashish Kumar Bhoi**
+
+* [github/AshishBhoi](https://github.com/jonschlinkert)
+* [twitter/Ashishbhoi8](https://twitter.com/jonschlinkert)
+
+### License ###
+
+Copyright © 2018, [Ashish Kumar Bhoi](https://github.com/AshishBhoi).
+Released under the [MIT License](LICENSE).
