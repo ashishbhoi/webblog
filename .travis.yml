@@ -1,17 +1,14 @@
 language: python
+addons:
+  ssh_known_hosts: abdevp.com
 before_install:
-  - 'which ssh-agent || ( apt-get update && apt-get install -y openssh-client && apt install sshpass -y)'
-  - mkdir -p .ssh
-  - eval $(ssh-agent -s)
-  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > .ssh/config'
-  - echo "$SSH_Privatekey"
-  - ssh-add <(echo "$SSH_Privatekey")
+  - apt-get update && apt-get install -y openssh-client && apt install sshpass -y
   - composer install
   - composer dumpautoload -o
   - composer install --optimize-autoloader --no-dev
   - php artisan config:cache
   - php artisan vendor:publish --tag=ckeditor
 script:
-  - ssh -p22 -o StrictHostKeyChecking=no abdevp@abdevp.com 'rm -r /home/abdevp/abdevp_md/*'
-  - scp -P22 -r ./* abdevp@abdevp.com:/home/abdevp/abdevp_md/
-  - ssh -p22 -o StrictHostKeyChecking=no abdevp@abdevp.com 'ln -s ~/abdevp_md/storage/app/public ~/abdevp_md/public/storage'
+  - sshpass -p $Password ssh abdevp@abdevp.com 'rm -r /home/abdevp/abdevp_md/*'
+  - sshpass -p $Password scp -P22 -r ./* abdevp@abdevp.com:/home/abdevp/abdevp_md/
+  - sshpass -p $Password abdevp@abdevp.com 'ln -s ~/abdevp_md/storage/app/public ~/abdevp_md/public/storage'
