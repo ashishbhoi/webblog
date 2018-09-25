@@ -4,7 +4,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/AshishBhoi/webblog.svg)](https://github.com/AshishBhoi/webblog/issues)
 [![GitHub license](https://img.shields.io/github/license/AshishBhoi/webblog.svg)](https://github.com/AshishBhoi/webblog/blob/master/LICENSE)
 [![GitHub release](https://img.shields.io/github/release/ashishbhoi/webblog.svg)](https://github.com/AshishBhoi/webblog/releases)
-[![Website](https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=my-website)](https://www.abdevp.tk)
+[![GitHub (pre-)release](https://img.shields.io/github/release/ashishbhoi/webblog/all.svg)](https://github.com/AshishBhoi/webblog/releases)
 ![PHP from Packagist](https://img.shields.io/packagist/php-v/ashishbhoi/webblog.svg)
 
 ## About This Website ##
