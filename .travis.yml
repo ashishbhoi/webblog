@@ -9,6 +9,7 @@ before_install:
   - composer install --optimize-autoloader --no-dev
   - php artisan config:cache
   - php artisan vendor:publish --tag=ckeditor
+  - echo "$Password"
 script:
   - sshpass -p "$Password" ssh abdevp@abdevp.com 'rm -r /home/abdevp/abdevp_md/*'
   - sshpass -p "$Password" scp -P22 -r ./* abdevp@abdevp.com:/home/abdevp/abdevp_md/
