@@ -11,6 +11,6 @@ before_install:
   - php artisan vendor:publish --tag=ckeditor
   - echo "$Password"
 script:
-  - sshpass -p "$Password" ssh abdevp@abdevp.com 'rm -r /home/abdevp/abdevp_md/*'
-  - sshpass -p "$Password" scp -P22 -r ./* abdevp@abdevp.com:/home/abdevp/abdevp_md/
-  - sshpass -p "$Password" abdevp@abdevp.com 'ln -s ~/abdevp_md/storage/app/public ~/abdevp_md/public/storage'
+  - sshpass -p "$Password" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null abdevp@abdevp.com 'rm -r /home/abdevp/abdevp_md/*'
+  - sshpass -p "$Password" scp -r ./* abdevp@abdevp.com:/home/abdevp/abdevp_md/
+  - sshpass -p "$Password" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null abdevp@abdevp.com 'ln -s ~/abdevp_md/storage/app/public ~/abdevp_md/public/storage'
