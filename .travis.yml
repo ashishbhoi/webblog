@@ -5,7 +5,7 @@ before_install:
 addons:
   ssh_known_hosts: abdevp.com
 script:
-  - sshpass -p "$Password" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null abdevp@abdevp.com 'rm -rf /home/abdevp/abdevp_ml/*'
+  - sshpass -p "$Password" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null abdevp@abdevp.com 'rm -r /home/abdevp/abdevp_ml'
   - sshpass -p "$Password" ssh abdevp@abdevp.com 'git clone https://github.com/AshishBhoi/webblog.git /home/abdevp/abdevp_ml/'
   - sshpass -p "$Password" ssh abdevp@abdevp.com 'cd /home/abdevp/abdevp_ml/ && composer install'
   - sshpass -p "$Password" ssh abdevp@abdevp.com 'cd /home/abdevp/abdevp_ml/ && composer dumpautoload -o'
