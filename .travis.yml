@@ -1,6 +1,5 @@
 language: python
-addons:
-  ssh_known_hosts: abdevp.com
+sudo: enabled
 before_install:
   - apt-get update && apt-get install -y openssh-client && apt install sshpass -y
   - composer install
