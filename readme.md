@@ -1,4 +1,4 @@
-<p align="center"><img src="https://www.abdevp.tk/favicon.png"></p>
+![AB Developers](https://www.abdevp.tk/favicon.png)
 
 [![Build Status](https://travis-ci.org/AshishBhoi/webblog.svg?branch=master)](https://travis-ci.org/AshishBhoi/webblog)
 [![GitHub issues](https://img.shields.io/github/issues/AshishBhoi/webblog.svg)](https://github.com/AshishBhoi/webblog/issues)
