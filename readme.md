@@ -19,31 +19,33 @@
 
 ## Files To Be Copied ##
 1. Download 'laravel.zip'
-2. Download 'public.zip'
+2. UnZip 'laravel.zip'
 
 ## Setup Process ##
-1. Decompress 'public.zip' in your 'public_html' folder
-2. Decompress 'laravel.zip' in some directory which is not assessable by web.
+1. Coppy files from 'Public' Folder to your hosting directory i.e. "public_html" or "www"
 
 ## Modifications To Be made ##
 1. rename '/.env.example' to '/.env'
-2. edit to your taste '.htaccess' File
+2. edit to your '.htaccess' File in "public folder"
 3. edit '/config/mail.php'
 4. edit '/public/index.php' 
 5. 'storage link'
 
-        $ ln -s ~/<Location Of Project>/storage/app/public ~/<Location Of Project>/public/storage
-6. 'iniciate composer'
+        $ ln -s ~/<Location Of Project "Laravel Folder">/storage/app/public ~/< hosting directory i.e. "public_html" or "www" >/storage
+        
+## Extra Modification ##
+- This is if you have a shell access 
+1. 'iniciate composer'
 
         $ composer install
         $ composer dumpautoload -o
         $ composer install --optimize-autoloader --no-dev
-7. 'laravel command'
+        
+2. 'laravel command'
 
         $ php artisan config:cache
         $ php artisan route:cache
-8. 'ckeditor'
+        
+3. 'ckeditor'
         
         $ php artisan vendor:publish --tag=ckeditor
-
-
