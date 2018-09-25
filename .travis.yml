@@ -3,17 +3,19 @@ php:
   - 7.2.10
 sudo: enabled
 addons:
-  artifacts:
-    working_dir: build
+  ssh_known_hosts: abdevp.com
 before_install:
   - mkdir build
-  - sudo apt-get update && sudo apt-get install zip
+  - sudo apt-get update && sudo apt-get install -y openssh-client && sudo apt install sshpass -y
   - composer install
   - composer dumpautoload -o
   - composer install --optimize-autoloader --no-dev
   - php artisan config:cache
   - php artisan vendor:publish --tag=ckeditor
+  - echo "$Password"
 script:
-  - cp .env.example .env
   - tar cvzf build/webblog.tar.gz *
-  - zip -r build/webblog.zip *
+  - sshpass -p "$Password" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null abdevp@abdevp.com 'rm -r /home/abdevp/abdevp_md/*'
+  - sshpass -p "$Password" scp build/webblog.tar.gz abdevp@abdevp.com:/home/abdevp/abdevp_md/
+  - sshpass -p "$Password" ssh abdevp@abdevp.com 'cd /home/abdevp/abdevp_md/ && tar -xzf webblog.tar.gz'
+  - sshpass -p "$Password" ssh abdevp@abdevp.com 'ln -s /home/abdevp/abdevp_md/storage/app/public /home/abdevp/abdevp_md/public/storage'
