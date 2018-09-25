@@ -1,7 +1,7 @@
-language: python
+language: php:latest
 sudo: enabled
 before_install:
-  - apt-get update && apt-get install -y openssh-client && apt install sshpass -y
+  - sudo apt-get update && sudo apt-get install -y openssh-client && sudo apt install sshpass -y
   - composer install
   - composer dumpautoload -o
   - composer install --optimize-autoloader --no-dev
