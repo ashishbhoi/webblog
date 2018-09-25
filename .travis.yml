@@ -5,13 +5,13 @@ before_install:
 addons:
   ssh_known_hosts: abdevp.com
 script:
-  - sshpass -p "$Password" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null abdevp@abdevp.com 'rm -r /home/abdevp/abdevp_ml/*'
-  - sshpass -p "$Password" ssh abdevp@abdevp.com 'cd /home/abdevp/abdevp_ml/ && git clone https://github.com/AshishBhoi/webblog.git .'
-  - sshpass -p "$Password" ssh abdevp@abdevp.com 'composer install'
-  - sshpass -p "$Password" ssh abdevp@abdevp.com 'composer dumpautoload -o'
-  - sshpass -p "$Password" ssh abdevp@abdevp.com 'composer install --optimize-autoloader --no-dev'
-  - sshpass -p "$Password" ssh abdevp@abdevp.com 'php artisan config:cache'
-  - sshpass -p "$Password" ssh abdevp@abdevp.com 'php artisan vendor:publish --tag=ckeditor'
+  - sshpass -p "$Password" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null abdevp@abdevp.com 'rm -rf /home/abdevp/abdevp_ml/*'
+  - sshpass -p "$Password" ssh abdevp@abdevp.com 'git clone https://github.com/AshishBhoi/webblog.git /home/abdevp/abdevp_ml/'
+  - sshpass -p "$Password" ssh abdevp@abdevp.com 'cd /home/abdevp/abdevp_ml/ && composer install'
+  - sshpass -p "$Password" ssh abdevp@abdevp.com 'cd /home/abdevp/abdevp_ml/ && composer dumpautoload -o'
+  - sshpass -p "$Password" ssh abdevp@abdevp.com 'cd /home/abdevp/abdevp_ml/ && composer install --optimize-autoloader --no-dev'
+  - sshpass -p "$Password" ssh abdevp@abdevp.com 'cd /home/abdevp/abdevp_ml/ && php artisan config:cache'
+  - sshpass -p "$Password" ssh abdevp@abdevp.com 'cd /home/abdevp/abdevp_ml/ && php artisan vendor:publish --tag=ckeditor'
   - sshpass -p "$Password" ssh abdevp@abdevp.com 'ln -s /home/abdevp/abdevp_ml/storage/app/public /home/abdevp/abdevp_ml/public/storage'
   - sshpass -p "$Password" ssh abdevp@abdevp.com 'cp /home/abdevp/abdevp.tk/.env /home/abdevp/abdevp_ml/'
   - sshpass -p "$Password" ssh abdevp@abdevp.com 'cp /home/abdevp/abdevp.tk/config/mail.php /home/abdevp/abdevp_ml/config/'
