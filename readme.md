@@ -1,10 +1,9 @@
-![AB Developers](https://www.abdevp.tk/favicon.png)
+[![AB Developers](https://www.abdevp.tk/favicon.png)](https://www.abdevp.tk)
 
 [![Build Status](https://travis-ci.org/AshishBhoi/webblog.svg?branch=master)](https://travis-ci.org/AshishBhoi/webblog)
 [![GitHub issues](https://img.shields.io/github/issues/AshishBhoi/webblog.svg)](https://github.com/AshishBhoi/webblog/issues)
 [![GitHub license](https://img.shields.io/github/license/AshishBhoi/webblog.svg)](https://github.com/AshishBhoi/webblog/blob/master/LICENSE)
 [![GitHub release](https://img.shields.io/github/release/ashishbhoi/webblog.svg)](https://github.com/AshishBhoi/webblog/releases)
-[![GitHub (pre-)release](https://img.shields.io/github/release/ashishbhoi/webblog/all.svg)](https://github.com/AshishBhoi/webblog/releases)
 [![Website](https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=my-website)](https://www.abdevp.tk)
 ![PHP from Packagist](https://img.shields.io/packagist/php-v/ashishbhoi/webblog.svg)
 
@@ -12,7 +11,7 @@
 
 - This website is all about my personal blogging project
 
-## [Contact Me](https://www.abdevp.tk/contact) ##
+[My Website](https://www.abdevp.tk) || [Contact Me](https://www.abdevp.tk/contact) || [About Me](https://www.abdevp.tk/about) || [Services](https://www.abdevp.tk/services) || [Articles/Blogs](https://www.abdevp.tk/posts)
 
 
 ## Files To Be Copied ##
