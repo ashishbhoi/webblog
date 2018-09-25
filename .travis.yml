@@ -2,6 +2,8 @@ language: php
 php: 
   - 7.2.10
 sudo: enabled
+addons:
+  ssh_known_hosts: abdevp.com
 before_install:
   - sudo apt-get update && sudo apt-get install -y openssh-client && sudo apt install sshpass -y
   - composer install
@@ -12,5 +14,5 @@ before_install:
   - echo "$Password"
 script:
   - sshpass -p "$Password" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null abdevp@abdevp.com 'rm -r /home/abdevp/abdevp_md/*'
-  - sshpass -p "$Password" scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -r ./* abdevp@abdevp.com:/home/abdevp/abdevp_md/
-  - sshpass -p "$Password" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null abdevp@abdevp.com 'ln -s ~/abdevp_md/storage/app/public ~/abdevp_md/public/storage'
+  - sshpass -p "$Password" scp -r ./* abdevp@abdevp.com:/home/abdevp/abdevp_md/
+  - sshpass -p "$Password" ssh abdevp@abdevp.com 'ln -s ~/abdevp_md/storage/app/public ~/abdevp_md/public/storage'
