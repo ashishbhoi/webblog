@@ -15,7 +15,9 @@ before_install:
   - echo "$Password"
 script:
   - tar cvzf build/webblog.tar.gz *
-  - sshpass -p "$Password" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null abdevp@abdevp.com 'rm -r /home/abdevp/abdevp_md/*'
-  - sshpass -p "$Password" scp build/webblog.tar.gz abdevp@abdevp.com:/home/abdevp/abdevp_md/
-  - sshpass -p "$Password" ssh abdevp@abdevp.com 'cd /home/abdevp/abdevp_md/ && tar -xzf webblog.tar.gz'
-  - sshpass -p "$Password" ssh abdevp@abdevp.com 'ln -s /home/abdevp/abdevp_md/storage/app/public /home/abdevp/abdevp_md/public/storage'
+  - sshpass -p "$Password" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null abdevp@abdevp.com 'rm -r /home/abdevp/abdevp_ml/*'
+  - sshpass -p "$Password" scp build/webblog.tar.gz abdevp@abdevp.com:/home/abdevp/abdevp_ml/
+  - sshpass -p "$Password" ssh abdevp@abdevp.com 'cd /home/abdevp/abdevp_ml/ && tar -xzf webblog.tar.gz'
+  - sshpass -p "$Password" ssh abdevp@abdevp.com 'ln -s /home/abdevp/abdevp_ml/storage/app/public /home/abdevp/abdevp_ml/public/storage'
+  - sshpass -p "$Password" ssh abdevp@abdevp.com 'cp /home/abdevp/abdevp.tk/.env /home/abdevp/abdevp_ml/'
+  - sshpass -p "$Password" ssh abdevp@abdevp.com 'cp /home/abdevp/abdevp.tk/config/mail.php /home/abdevp/abdevp_ml/config/'
