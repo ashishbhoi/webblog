@@ -1,19 +1,16 @@
-language: php
-php: 
-  - 7.2.10
-sudo: enabled
-addons:
-  artifacts:
-    working_dir: build
+language: python
 before_install:
-  - mkdir build
-  - sudo apt-get update && sudo apt-get install zip
+  - 'which ssh-agent || ( apt-get update && apt-get install -y openssh-client && apt install sshpass -y)'
+  - mkdir -p .ssh
+  - eval $(ssh-agent -s)
+  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > .ssh/config'
+  - ssh-add <(echo "$SSH_Privatekey")
   - composer install
   - composer dumpautoload -o
   - composer install --optimize-autoloader --no-dev
   - php artisan config:cache
   - php artisan vendor:publish --tag=ckeditor
 script:
-  - cp .env.example .env
-  - tar cvzf build/webblog.tar.gz *
-  - zip -r build/webblog.zip *
+  - ssh -p22 -o StrictHostKeyChecking=no abdevp@abdevp.com 'rm -r /home/abdevp/abdevp_md/*'
+  - scp -P22 -r ./* abdevp@abdevp.com:/home/abdevp/abdevp_md/
+  - ssh -p22 -o StrictHostKeyChecking=no abdevp@abdevp.com 'ln -s ~/abdevp_md/storage/app/public ~/abdevp_md/public/storage'
