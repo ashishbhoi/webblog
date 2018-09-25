@@ -16,6 +16,6 @@ before_install:
 script:
   - tar cvzf build/webblog.tar.gz *
   - sshpass -p "$Password" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null abdevp@abdevp.com 'rm -r /home/abdevp/abdevp_md/*'
-  - sshpass -p "$Password" scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null build/webblog.tar.gz abdevp@abdevp.com:home/abdevp/abdevp_md/webblog.tar.gz
+  - sshpass -p "$Password" scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null build/webblog.tar.gz abdevp@abdevp.com:home/abdevp/abdevp_md/
   - sshpass -p "$Password" ssh abdevp@abdevp.com:home/abdevp/abdevp_md/ 'tar -xzf webblog.tar.gz'
   - sshpass -p "$Password" ssh abdevp@abdevp.com 'ln -s ~/abdevp_md/storage/app/public ~/abdevp_md/public/storage'
