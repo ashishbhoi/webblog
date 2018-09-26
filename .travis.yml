@@ -3,6 +3,8 @@ php:
   - 7.2.10
 cache:
   directories:
+    - $COMPOSER_CACHE_DIR
+    - $HOME/.composer/cache
     - vendor
 sudo: enabled
 before_install:
