@@ -1,18 +1,23 @@
 language: php
+php: 
+  - 7.2.10
 sudo: enabled
 before_install:
   - sudo apt-get update && sudo apt-get install -y openssh-client && sudo apt install sshpass -y
+  - mkdir build
+  - composer install
+  - composer dumpautoload -o
+  - composer install --optimize-autoloader --no-dev
+  - php artisan vendor:publish --tag=ckeditor
+  - tar cvzf build/webblog.tar.gz *
 addons:
   ssh_known_hosts: abdevp.com
 script:
-  - sshpass -p "$Password" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null abdevp@abdevp.com 'rm -r /home/abdevp/abdevp_ml'
-  - sshpass -p "$Password" ssh abdevp@abdevp.com 'git clone https://github.com/AshishBhoi/webblog.git /home/abdevp/abdevp_ml/'
+  - sshpass -p "$Password" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null abdevp@abdevp.com 'rm -r /home/abdevp/abdevp_ml/*'
+  - sshpass -p "$Password" scp build/webblog.tar.gz abdevp@abdevp.com:/home/abdevp/abdevp_ml/
+  - sshpass -p "$Password" ssh abdevp@abdevp.com 'cd /home/abdevp/abdevp_ml/ && tar -xzf webblog.tar.gz'
   - sshpass -p "$Password" ssh abdevp@abdevp.com 'ln -s /home/abdevp/abdevp_ml/storage/app/public /home/abdevp/abdevp_ml/public/storage'
   - sshpass -p "$Password" ssh abdevp@abdevp.com 'cp /home/abdevp/abdevp.tk/.env /home/abdevp/abdevp_ml/'
   - sshpass -p "$Password" ssh abdevp@abdevp.com 'cp /home/abdevp/abdevp.tk/config/mail.php /home/abdevp/abdevp_ml/config/'
-  - sshpass -p "$Password" ssh abdevp@abdevp.com 'cd /home/abdevp/abdevp_ml/ && composer install'
-  - sshpass -p "$Password" ssh abdevp@abdevp.com 'cd /home/abdevp/abdevp_ml/ && composer dumpautoload -o'
-  - sshpass -p "$Password" ssh abdevp@abdevp.com 'cd /home/abdevp/abdevp_ml/ && composer install --optimize-autoloader --no-dev'
   - sshpass -p "$Password" ssh abdevp@abdevp.com 'cd /home/abdevp/abdevp_ml/ && php artisan key:generate'
   - sshpass -p "$Password" ssh abdevp@abdevp.com 'cd /home/abdevp/abdevp_ml/ && php artisan config:cache'
-  - sshpass -p "$Password" ssh abdevp@abdevp.com 'cd /home/abdevp/abdevp_ml/ && php artisan vendor:publish --tag=ckeditor'
