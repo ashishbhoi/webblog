@@ -1,11 +1,14 @@
 language: php
 php: 
   - 7.2.10
+ cache:
+    directories:
+     - vendor/
 sudo: enabled
 before_install:
   - sudo apt-get update && sudo apt-get install -y openssh-client && sudo apt install sshpass -y
   - mkdir build
-  - composer install
+  - composer update
   - composer dumpautoload -o
   - composer install --optimize-autoloader --no-dev
   - php artisan vendor:publish --tag=ckeditor
