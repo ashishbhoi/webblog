@@ -28,12 +28,10 @@ script:
   - sshpass -p "$Password" ssh abdevp@abdevp.com 'cd /home/abdevp/abdevp_ml/ && php artisan config:cache'
   - sshpass -p "$Password" ssh abdevp@abdevp.com 'mv /home/abdevp/abdevp_ml/webblog.tar.gz /home/abdevp/abdevp.tk/'
 deploy:
-  - provider: releases
-    user: $GITHUB_USERNAME
-    password: $GITHUB_PASSWORD
-    file: build/webblog.tar.gz
-    skip_cleanup: true
-    on:
-      repo: AshishBhoi/webblog
-      tags: true
-      all_branches: true
+  provider: releases
+  api_key:
+    secure: $API_TOKEN
+  file: build/webblog.tar.gz
+  skip_cleanup: true
+  on:
+    tags: true
