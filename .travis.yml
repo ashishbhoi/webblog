@@ -29,8 +29,8 @@ script:
   - sshpass -p "$Password" ssh abdevp@abdevp.com 'mv /home/abdevp/abdevp_ml/webblog.tar.gz /home/abdevp/abdevp.tk/'
 deploy:
   provider: releases
-  user: "$GITHUB_USERNAME"
-  password: "$GITHUB_PASSWORD"
+  user: $GITHUB_USERNAME
+  password: $GITHUB_PASSWORD
   file: "build/webblog.tar.gz"
   skip_cleanup: true
   on:
