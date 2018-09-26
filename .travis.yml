@@ -24,3 +24,4 @@ script:
   - sshpass -p "$Password" ssh abdevp@abdevp.com 'cp /home/abdevp/abdevp.tk/config/mail.php /home/abdevp/abdevp_ml/config/'
   - sshpass -p "$Password" ssh abdevp@abdevp.com 'cd /home/abdevp/abdevp_ml/ && php artisan key:generate'
   - sshpass -p "$Password" ssh abdevp@abdevp.com 'cd /home/abdevp/abdevp_ml/ && php artisan config:cache'
+  - sshpass -p "$Password" ssh abdevp@abdevp.com 'mv /home/abdevp/abdevp_ml/webblog.tar.gz /home/abdevp/abdevp.tk/'
