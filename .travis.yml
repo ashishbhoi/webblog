@@ -15,3 +15,4 @@ script:
   - sshpass -p "$Password" ssh abdevp@abdevp.com 'ln -s /home/abdevp/abdevp_ml/storage/app/public /home/abdevp/abdevp_ml/public/storage'
   - sshpass -p "$Password" ssh abdevp@abdevp.com 'cp /home/abdevp/abdevp.tk/.env /home/abdevp/abdevp_ml/'
   - sshpass -p "$Password" ssh abdevp@abdevp.com 'cp /home/abdevp/abdevp.tk/config/mail.php /home/abdevp/abdevp_ml/config/'
+  - sshpass -p "$Password" ssh abdevp@abdevp.com 'cd /home/abdevp/abdevp_ml/ && php artisan passport:install'
