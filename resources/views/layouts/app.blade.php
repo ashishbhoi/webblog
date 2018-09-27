@@ -37,7 +37,7 @@
 
         <div id='app'>
         </div>
-<footer class="container-fluid text-center bg-dark text-light">
+<footer class="container-fluid text-center bg-temp text-light">
     <div class="copyright-bottom">
     <p> Ashish Kumar Bhoi &copy; 2018 </p>
     </div>

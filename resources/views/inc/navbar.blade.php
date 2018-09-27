@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default fixed-top navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-default fixed-top navbar-expand-lg navbar-dark bg-temp">
     <div class="container-fluid">
         <a class="navbar-brand" href="/" title="" aria-label="Brand">
             <img class="navbar-brand-icon" src="{{asset('favicon.png')}}" rel="ICON" alt="{{config('app.name', 'LSAPP')}}">
@@ -88,7 +88,7 @@
         </div>
     </div>
 </nav>
-<nav class="navbar navbar-default navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-default navbar-expand-lg navbar-dark bg-temp">
     <div class="container-fluid">
         <a class="navbar-brand" href="/" title="" aria-label="Brand">
             <img class="navbar-brand-icon" src="{{asset('favicon.png')}}" rel="ICON" alt="{{config('app.name', 'LSAPP')}}">
