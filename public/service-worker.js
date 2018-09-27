@@ -29,7 +29,7 @@
 
 
 /* eslint-disable quotes, comma-spacing */
-var PrecacheConfig = [['/','css/app.css','js/app.js','manifest/icon120.png','manifest/icon152.png','manifest/icon180.png','manifest/icon192.png','manifest/icon36.png','manifest/icon48.png','manifest/icon512.png','manifest/icon60.png','manifest/icon72.png','manifest/icon76.png','manifest/icon96.png','manifest/manifest.json','service-worker.js','svg/403.svg','svg/404.svg','svg/500.svg','svg/503.svg']];
+var PrecacheConfig = [['/'],['css/app.css'],['js/app.js'],['manifest/icon120.png'],['manifest/icon152.png'],['manifest/icon180.png'],['manifest/icon192.png'],['manifest/icon36.png'],['manifest/icon48.png'],['manifest/icon512.png'],['manifest/icon60.png'],['manifest/icon72.png'],['manifest/icon76.png'],['manifest/icon96.png'],['manifest/manifest.json'],['service-worker.js'],['svg/403.svg'],['svg/404.svg'],['svg/500.svg'],['svg/503.svg']];
 /* eslint-enable quotes, comma-spacing */
 var CacheNamePrefix = 'sw-precache-v1--' + (self.registration ? self.registration.scope : '') + '-';
 
