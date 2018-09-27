@@ -90,12 +90,12 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link p-2" href="http://github.com/ashishkumarbhoi" target="noopener" aria-label="GitHub">
+                    <a class="nav-link p-2" href="http://github.com/AshishBhoi" target="noopener" aria-label="GitHub">
                         <i class="fab fa-github fa-lg text-white"></i>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link p-2" href="http://gitlab.com/ashishkumarbhoi" target="noopener" aria-label="GitLab">
+                    <a class="nav-link p-2" href="http://gitlab.com/AshishBhoi" target="noopener" aria-label="GitLab">
                         <i class="fab fa-gitlab fa-lg text-white"></i>
                     </a>
                 </li>
