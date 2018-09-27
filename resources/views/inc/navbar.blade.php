@@ -1,4 +1,3 @@
-<!-- Navbar Fixed Top-->
 <nav class="navbar navbar-default fixed-top navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="/" title="" aria-label="Brand">
@@ -29,17 +28,9 @@
                 <li class="nav-item ">
                     <a class="nav-link p-2" href="/contact" aria-label="Contact">Contact</a>
                 </li>
-
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
                     </ul>
-
-                    <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -49,21 +40,18 @@
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
-
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a href="/dashboard" class="dropdown-item" aria-label="Dashboard">Dashboard</a>
                                     <a class="dropdown-item" href="/posts/create" aria-label="New Blog">New Blog</a>
                                     @if(Auth::user()->id == 3)
                                         <a class="dropdown-item" href="/register" aria-label="Register">Add Member</a>
                                     @endif
-
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
-
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
@@ -71,9 +59,6 @@
                             </li>
                         @endguest
                     </ul>
-                </div>
-
-
                 <li class="nav-item">
                     <a class="nav-link p-2" href="https://www.facebook.com/ashish.bhoi.2016" target="noopener" aria-label="Facebook">
                         <i class="fab fa-facebook-f fa-lg text-white padding"></i>
@@ -103,8 +88,6 @@
         </div>
     </div>
 </nav>
-
-<!-- Navbar Fixed Top-->
 <nav class="navbar navbar-default navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="/" title="" aria-label="Brand">
