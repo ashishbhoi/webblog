@@ -37,6 +37,11 @@
 
         <div id='app'>
         </div>
+<footer class="container-fluid text-center bg-dark text-light">
+    <div class="copyright-bottom">
+    <p> Ashish Kumar Bhoi &copy; 2018 </p>
+    </div>
+</footer>
 </body>
 <script src="{{asset('js/app.js')}}"></script>
 <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
