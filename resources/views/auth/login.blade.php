@@ -1,5 +1,8 @@
 @extends('layouts.app')
-
+@section('meta')
+    <meta name="description" content="Login Page">
+    <meta name="keywords" content="Login, Blog, Ashish Kumar Bhoi, Laravel">
+@endsection
 @section('content')
 <div class="container-login">
     <div class="row justify-content-center">

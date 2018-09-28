@@ -5,7 +5,52 @@ echo '<?xml version="1.0" encoding="UTF-8"?>'
 echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
 ?>
 <url>
-    <loc>https://www.abdevp.tk/</loc>
+    <loc>{{config('app.url')}}/</loc>
+    <lastmod>2017-09-16T14:09:44+05:30</lastmod>
+    <priority>1.00</priority>
+</url>
+<url>
+    <loc>{{config('app.url')}}/password/reset</loc>
+    <lastmod>2017-09-16T14:09:44+05:30</lastmod>
+    <priority>1.00</priority>
+</url>
+<url>
+    <loc>{{config('app.url')}}/login</loc>
+    <lastmod>2017-09-16T14:09:44+05:30</lastmod>
+    <priority>1.00</priority>
+</url>
+<url>
+    <loc>{{config('app.url')}}/register</loc>
+    <lastmod>2017-09-16T14:09:44+05:30</lastmod>
+    <priority>1.00</priority>
+</url>
+<url>
+    <loc>{{config('app.url')}}/about</loc>
+    <lastmod>2017-09-16T14:09:44+05:30</lastmod>
+    <priority>1.00</priority>
+</url>
+<url>
+    <loc>{{config('app.url')}}/contact</loc>
+    <lastmod>2017-09-16T14:09:44+05:30</lastmod>
+    <priority>1.00</priority>
+</url>
+<url>
+    <loc>{{config('app.url')}}/services</loc>
+    <lastmod>2017-09-16T14:09:44+05:30</lastmod>
+    <priority>1.00</priority>
+</url>
+<url>
+    <loc>{{config('app.url')}}/posts</loc>
+    <lastmod>2017-09-16T14:09:44+05:30</lastmod>
+    <priority>1.00</priority>
+</url>
+<url>
+    <loc>{{config('app.url')}}/dashboard</loc>
+    <lastmod>2017-09-16T14:09:44+05:30</lastmod>
+    <priority>1.00</priority>
+</url>
+<url>
+    <loc>{{config('app.url')}}/posts/create</loc>
     <lastmod>2017-09-16T14:09:44+05:30</lastmod>
     <priority>1.00</priority>
 </url>

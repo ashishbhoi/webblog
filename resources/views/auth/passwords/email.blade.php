@@ -1,3 +1,7 @@
+@section('meta')
+    <meta name="description" content="Reset Password Page">
+    <meta name="keywords" content="Login, Blog, Ashish Kumar Bhoi, Laravel, Password, Lost Password, Reset Password">
+@endsection
 @extends('layouts.app')
 
 @section('content')

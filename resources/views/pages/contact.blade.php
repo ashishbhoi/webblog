@@ -1,3 +1,8 @@
+@section('meta')
+    <meta name="description" content="Contact Ashish Kumar Bhoi For Any help or To For asking About Jobs And All">
+    <meta name="keywords" content="Login, Blog, Ashish Kumar Bhoi, Laravel, Contact, Help , Jobs , Question">
+@endsection
+
 @extends('layouts.app')
 
 @section('content')

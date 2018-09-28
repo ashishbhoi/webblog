@@ -1,3 +1,8 @@
+@section('meta')
+    <meta name="description" content="Services Provided by Ashish Kumar Bhoi">
+    <meta name="keywords" content="Login, Blog, Ashish Kumar Bhoi, Laravel, Services, Jobs, Solution">
+@endsection
+
 @extends('layouts.app')
 
 @section('content')

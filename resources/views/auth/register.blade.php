@@ -1,3 +1,7 @@
+@section('meta')
+    <meta name="description" content="Register Page">
+    <meta name="keywords" content="Login, Blog, Ashish Kumar Bhoi, Laravel, Register User, New User, Add User">
+@endsection
 @section('content')
 @extends('layouts.app')
 @if(!Auth::guest())
