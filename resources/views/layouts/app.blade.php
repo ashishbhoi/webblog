@@ -26,7 +26,7 @@
 
 
     <!-- Manifest.json File -->
-    <link rel="manifest" href="{{asset('manifest/manifest.json')}}">
+    <link rel="manifest" href="{{asset('manifest.json')}}">
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({

@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default fixed-top navbar-expand-lg navbar-dark bg-temp">
     <div class="container-fluid">
         <a class="navbar-brand" href="/" title="" aria-label="Brand">
-            <img class="navbar-brand-icon" src="{{asset('favicon.png')}}" rel="ICON" alt="{{config('app.name', 'LSAPP')}}">
+            <img class="navbar-brand-icon" src="{{asset('icon/favicon.png')}}" rel="ICON" alt="{{config('app.name', 'LSAPP')}}">
         </a>
         <a class="navbar-brand" href="/">{{config('app.name', 'LSAPP')}}</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -91,7 +91,7 @@
 <nav class="navbar navbar-default navbar-expand-lg navbar-dark bg-temp">
     <div class="container-fluid">
         <a class="navbar-brand" href="/" title="" aria-label="Brand">
-            <img class="navbar-brand-icon" src="{{asset('favicon.png')}}" rel="ICON" alt="{{config('app.name', 'LSAPP')}}">
+            <img class="navbar-brand-icon" src="{{asset('icon/favicon.png')}}" rel="ICON" alt="{{config('app.name', 'LSAPP')}}">
         </a>
     </div>
 </nav>
