@@ -16,17 +16,17 @@ before_install:
   - php artisan vendor:publish --tag=ckeditor
   - tar cvzf build/webblog.tar.gz *
 addons:
-  ssh_known_hosts: abdevp.com
+  ssh_known_hosts: ssh.abdevp.com
 script:
-  - sshpass -p "$Password" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null abdevp@abdevp.com 'rm -r /home/abdevp/abdevp_ml/*'
-  - sshpass -p "$Password" scp build/webblog.tar.gz abdevp@abdevp.com:/home/abdevp/abdevp_ml/
-  - sshpass -p "$Password" ssh abdevp@abdevp.com 'cd /home/abdevp/abdevp_ml/ && tar -xzf webblog.tar.gz'
-  - sshpass -p "$Password" ssh abdevp@abdevp.com 'ln -s /home/abdevp/abdevp_ml/storage/app/public /home/abdevp/abdevp_ml/public/storage'
-  - sshpass -p "$Password" ssh abdevp@abdevp.com 'cp /home/abdevp/abdevp.tk/.env /home/abdevp/abdevp_ml/'
-  - sshpass -p "$Password" ssh abdevp@abdevp.com 'cp /home/abdevp/abdevp.tk/config/mail.php /home/abdevp/abdevp_ml/config/'
-  - sshpass -p "$Password" ssh abdevp@abdevp.com 'cd /home/abdevp/abdevp_ml/ && php artisan key:generate'
-  - sshpass -p "$Password" ssh abdevp@abdevp.com 'cd /home/abdevp/abdevp_ml/ && php artisan config:cache'
-  - sshpass -p "$Password" ssh abdevp@abdevp.com 'mv /home/abdevp/abdevp_ml/webblog.tar.gz /home/abdevp/abdevp.tk/'
+  - sshpass -p "$Password" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null abdevp@ssh.abdevp.com 'rm -r /home/abdevp/abdevp_ml/*'
+  - sshpass -p "$Password" scp build/webblog.tar.gz abdevp@ssh.abdevp.com:/home/abdevp/abdevp_ml/
+  - sshpass -p "$Password" ssh abdevp@ssh.abdevp.com 'cd /home/abdevp/abdevp_ml/ && tar -xzf webblog.tar.gz'
+  - sshpass -p "$Password" ssh abdevp@ssh.abdevp.com 'ln -s /home/abdevp/abdevp_ml/storage/app/public /home/abdevp/abdevp_ml/public/storage'
+  - sshpass -p "$Password" ssh abdevp@ssh.abdevp.com 'cp /home/abdevp/abdevp.tk/.env /home/abdevp/abdevp_ml/'
+  - sshpass -p "$Password" ssh abdevp@ssh.abdevp.com 'cp /home/abdevp/abdevp.tk/config/mail.php /home/abdevp/abdevp_ml/config/'
+  - sshpass -p "$Password" ssh abdevp@ssh.abdevp.com 'cd /home/abdevp/abdevp_ml/ && php artisan key:generate'
+  - sshpass -p "$Password" ssh abdevp@ssh.abdevp.com 'cd /home/abdevp/abdevp_ml/ && php artisan config:cache'
+  - sshpass -p "$Password" ssh abdevp@ssh.abdevp.com 'mv /home/abdevp/abdevp_ml/webblog.tar.gz /home/abdevp/abdevp.tk/'
 deploy:
   provider: releases
   api_key:
