@@ -1,3 +1,8 @@
+@section('meta')
+    <meta name="description" content="Your Personal Dashboard Just for All Your Personal Blog">
+    <meta name="keywords" content="Login, Blog, Ashish Kumar Bhoi, Laravel, Services, Jobs, Solution">
+@endsection
+
 @extends('layouts.app')
 
 @section('content')

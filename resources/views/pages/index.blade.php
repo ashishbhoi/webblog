@@ -1,3 +1,8 @@
+@section('meta')
+    <meta name="description" content="This Is Ashish Kumar Bhoi Student Computer Science And Engineering , IIT Dharwad ,  3rd Year student ">
+    <meta name="keywords" content="Login, Blog, Ashish Kumar Bhoi, Laravel, Computer science, IIT , Student, Engineering">
+@endsection
+
 @extends('layouts.app')
 
 @section('content')

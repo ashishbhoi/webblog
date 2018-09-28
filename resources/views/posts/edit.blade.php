@@ -1,3 +1,8 @@
+@section('meta')
+    <meta name="description" content="Edit Yout Post To My webite If You Havde a login Credential Other wise Contact Me">
+    <meta name="keywords" content="Login, Blog, Ashish Kumar Bhoi, Laravel, Edit Blog, Post">
+@endsection
+
 @extends('layouts.app')
 
 @section('content')

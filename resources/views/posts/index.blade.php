@@ -1,3 +1,8 @@
+@section('meta')
+    <meta name="description" content="All The Posts Article And Blogs of Ashish Kumar Bhoi is present Hear Any One can view it With out any Security Credentials">
+    <meta name="keywords" content="Login, Blog, Ashish Kumar Bhoi, Laravel, Article, posts">
+@endsection
+
 @extends('layouts.app')
 
 @section('content')
