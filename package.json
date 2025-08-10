@@ -13,12 +13,12 @@
     },
     "devDependencies": {
         "@fortawesome/fontawesome-free": "^5.3.1",
-        "axios": "^0.18",
-        "bootstrap": "^4.0.0",
+        "axios": "^0.30",
+        "bootstrap": "^5.0.0",
         "cross-env": "^5.1",
-        "jquery": "^3.2",
-        "laravel-mix": "^2.0",
-        "lodash": "^4.17.5",
+        "jquery": "^3.5",
+        "laravel-mix": "^6.0",
+        "lodash": "^4.17.21",
         "popper.js": "^1.12",
         "vue": "^2.5.7"
     },
